@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Bitware</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2025-08-28T09:06:18.000Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Bitware</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在手机上部署hexo博客</title>
+    <link href="http://example.com/posts/2ecd/"/>
+    <id>http://example.com/posts/2ecd/</id>
+    <published>2025-08-27T02:02:47.000Z</published>
+    <updated>2025-08-28T09:06:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="📲-基础环境安装与配置"><a href="#📲-基础环境安装与配置" class="headerlink" title="📲 基础环境安装与配置"></a>📲 基础环境安装与配置</h3><ol><li><strong>安装 Termux</strong>：从 <strong>F-Droid</strong> 或 Google Play 获取 Termux。</li><li><strong>更新软件包并安装 Node.js</strong>：在 Termux 中执行以下命令来安装必要的软件包：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pkg update</span><br><span class="line">pkg install nodejs git</span><br></pre></td></tr></table></figure><code>git</code> 是后续初始化 Hexo 项目所必需的。</li></ol><h3 id="⚙️-安装与初始化-Hexo"><a href="#⚙️-安装与初始化-Hexo" class="headerlink" title="⚙️ 安装与初始化 Hexo"></a>⚙️ 安装与初始化 Hexo</h3><ol><li><p><strong>安装 Hexo CLI</strong>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><p>这会在系统级安装 Hexo 命令行工具。</p></li><li><p><strong>初始化 Hexo 项目</strong>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init my-blog  <span class="comment"># 创建一个名为 my-blog 的新目录存放博客</span></span><br><span class="line"><span class="built_in">cd</span> my-blog         <span class="comment"># 进入博客目录</span></span><br><span class="line">npm install        <span class="comment"># 安装项目所需的依赖包</span></span><br></pre></td></tr></table></figure><p>此步骤会创建 Hexo 博客的基本结构并安装默认依赖。</p></li></ol><h3 id="🧪-本地运行与测试"><a href="#🧪-本地运行与测试" class="headerlink" title="🧪 本地运行与测试"></a>🧪 本地运行与测试</h3><ol><li><strong>生成静态文件并启动本地服务器</strong>：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s  <span class="comment"># 一键三连</span></span><br></pre></td></tr></table></figure></li><li><strong>访问本地博客</strong>：服务器启动后，通常在终端会显示访问地址（如 <code>http://localhost:4000</code>）。在手机浏览器中输入此地址即可预览博客。</li></ol><h3 id="✍️-撰写与管理博客"><a href="#✍️-撰写与管理博客" class="headerlink" title="✍️ 撰写与管理博客"></a>✍️ 撰写与管理博客</h3><ol><li><strong>创建新文章</strong>：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;我的新文章&quot;</span>  <span class="comment"># 会在 `source/_posts` 目录下生成对应的 Markdown 文件</span></span><br></pre></td></tr></table></figure></li><li><strong>编辑文章</strong>：找到生成的 <code>.md</code>，使用vi编辑新建的文章<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi 我的新文章.md</span><br></pre></td></tr></table></figure></li></ol><h3 id="🔄-部署与远程访问"><a href="#🔄-部署与远程访问" class="headerlink" title="🔄 部署与远程访问"></a>🔄 部署与远程访问</h3><p>本地博客写好后，你可能会希望部署到远程服务器或提供公网访问：</p><p>   <strong>部署到 Git 仓库</strong>：这是最常见的方式。你需要：<br>    1.  安装部署插件：<code>npm install hexo-deployer-git --save</code><br>    2.  配置 <code>_config.yml</code> 文件的 <code>deploy</code> 部分，填写仓库地址。<br>    3.  运行 <code>hexo deploy</code> (或 <code>hexo d</code>) 进行部署。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;📲-基础环境安装与配置&quot;&gt;&lt;a href=&quot;#📲-基础环境安装与配置&quot; class=&quot;headerlink&quot; title=&quot;📲 基础环境安装与配置&quot;&gt;&lt;/a&gt;📲 基础环境安装与配置&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;安装 Termux&lt;/stron</summary>
+      
+    
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="博客" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="termux" scheme="http://example.com/tags/termux/"/>
+    
+    <category term="手机" scheme="http://example.com/tags/%E6%89%8B%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>外网通过ipv6地址访问内网服务器</title>
+    <link href="http://example.com/posts/8040/"/>
+    <id>http://example.com/posts/8040/</id>
+    <published>2025-07-23T02:09:10.000Z</published>
+    <updated>2025-08-28T09:09:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、将光猫改桥接"><a href="#一、将光猫改桥接" class="headerlink" title="一、将光猫改桥接"></a>一、将光猫改桥接</h3><p>光猫超管账号密码可以在网上查询获取方法，实在不行问装宽带的师傅,一般都给的,直接联系光猫上的师傅电话</p><p>进入光猫后台  </p><p>如图: 网络-&gt;宽带设置-&gt;连接名称-&gt;”路由”改”桥接”,其他默认即可,最好截图做个备份</p><p><img src="https://pic1.imgdb.cn/item/68802e2758cb8da5c8cc7306.png"></p><p>光猫改桥接后，若光猫自带无线网络功能，连接后将无法连接互联网，此为正常现象。</p><h3 id="二、路由器开启ipv6"><a href="#二、路由器开启ipv6" class="headerlink" title="二、路由器开启ipv6"></a>二、路由器开启ipv6</h3><p>上网模式改PPPoE,填入自己的宽带账号密码</p><p>开启ipv6,同时先关闭ipv6防火墙</p><h3 id="三、测试ipv6是否可用"><a href="#三、测试ipv6是否可用" class="headerlink" title="三、测试ipv6是否可用"></a>三、测试ipv6是否可用</h3><h5 id="在系统设置-网络和Internet-当前连接的网络-找到本机的ipv6"><a href="#在系统设置-网络和Internet-当前连接的网络-找到本机的ipv6" class="headerlink" title="在系统设置-&gt;网络和Internet-&gt;当前连接的网络-&gt;找到本机的ipv6"></a>在系统设置-&gt;网络和Internet-&gt;当前连接的网络-&gt;找到本机的ipv6</h5><h5 id="进入ping测试地址-填入ipv6地址测试-没有显示PingFailed-而是显示测速数据就是成功了"><a href="#进入ping测试地址-填入ipv6地址测试-没有显示PingFailed-而是显示测速数据就是成功了" class="headerlink" title="进入ping测试地址,填入ipv6地址测试,没有显示PingFailed,而是显示测速数据就是成功了."></a>进入<a href="https://ipw.cn/ipv6ping/">ping测试地址</a>,填入ipv6地址测试,没有显示PingFailed,而是显示测速数据就是成功了.</h5>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;一、将光猫改桥接&quot;&gt;&lt;a href=&quot;#一、将光猫改桥接&quot; class=&quot;headerlink&quot; title=&quot;一、将光猫改桥接&quot;&gt;&lt;/a&gt;一、将光猫改桥接&lt;/h3&gt;&lt;p&gt;光猫超管账号密码可以在网上查询获取方法，实在不行问装宽带的师傅,一般都给的,直接联系光猫上的</summary>
+      
+    
+    
+    
+    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="网络" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="ipv6" scheme="http://example.com/tags/ipv6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NAS盒子-IPV6动态域名解析外网访问</title>
+    <link href="http://example.com/posts/8003/"/>
+    <id>http://example.com/posts/8003/</id>
+    <published>2025-07-22T02:09:10.000Z</published>
+    <updated>2025-08-28T09:09:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、家里网络拓扑图"><a href="#一、家里网络拓扑图" class="headerlink" title="一、家里网络拓扑图"></a>一、家里网络拓扑图</h3><p>介绍一下网络布局，全屋设置同名WiFI，而路由器A和路由器B选择AP模式，是为了减少NAT转发降速，同时保持同一网段，方便所有联网的设备漫游、电视投屏、资源共享，每家的网络情况不一样，仅供参考。<br>内网IP:<br>光猫：192.168.1.1<br>NAS盒子：192.168.1.2<br>路由器A(客厅)：192.168.1.3<br>路由器B(卧室)：192.168.1.4<br>WiFi名称：<a href="http://www.zhangsan.cn/">www.zhangsan.cn</a></p><h3 id="二、盒子IPV6动态解析域名"><a href="#二、盒子IPV6动态解析域名" class="headerlink" title="二、盒子IPV6动态解析域名"></a>二、盒子IPV6动态解析域名</h3><p>前提：<br>申请一个域名：zhangsan.cn（比如我的名字为张三），nas.zhangsan.cn 二级域名绑定NAS盒子，国内的域名记得备案。我家里运营商送的光猫用路由模式已封禁端口：80、443，无法使用SSL，好在支持IPV6。IPV6检测：<a href="https://ipw.cn/ipv6/">https://ipw.cn/ipv6/</a> ， 或者查看NAS盒子是否支持IPV6，输入命令：ifconfig</p><h4 id="安装DDNS-GO"><a href="#安装DDNS-GO" class="headerlink" title="安装DDNS-GO"></a>安装DDNS-GO</h4><p>  我申请的域名是腾讯云的，以下就以腾讯云DDNS为例。NAS盒子用Docker安装DDNS-GO，用于自动更新解析IPV6，钉钉群机器人发送更新通知，安装命令如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --restart=always --name ddns-go --net=host -v /mnt/sda1/ddns:/root jeessy/ddns-go -l :9877 -f 600</span><br></pre></td></tr></table></figure><p>拉取失败可以使用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --restart=always --name ddns-go --net=host -v /mnt/sda1/ddns:/root ghcr.io/jeessy2/ddns-go -l :9877 -f 600</span><br></pre></td></tr></table></figure><p>安装完，访问 <a href="http://nas盒子ip:9877/">http://NAS盒子IP:9877</a> 配置一下</p><h4 id="腾讯云DNS解析"><a href="#腾讯云DNS解析" class="headerlink" title="腾讯云DNS解析"></a>腾讯云DNS解析</h4><p>  （1）API 密钥<br>  腾讯云登陆-DNSPod - 访问管理-API 密钥(用于DDNS-GO配置：DNS服务商填写ID和Token)，可以直接访问<a href="https://console.dnspod.cn/account/token/token">https://console.dnspod.cn/account/token/token</a></p><p>（2）DNS解析<br>腾讯云登陆-控制台-DNSPod-DNS解析，可以直接访问<a href="https://console.dnspod.cn/">https://console.dnspod.cn</a></p><p>域名解析检测：<a href="https://tool.dnspod.cn/">https://tool.dnspod.cn</a></p><p>上面所有操作完成后：<br>家里内网可以访问：<a href="http://nas.zhangsan.cn/">http://nas.zhangsan.cn</a><br>在外网可以访问：<a href="http://nas.zhangsan.cn:81/">http://nas.zhangsan.cn:81</a><br>温馨提示：<br>如果嫌弃带有端口号，可以通过访问一级域名<a href="http://zhangsan.cn/nas">http://zhangsan.cn/nas</a><br>自动跳转到 <a href="http://nas.zhangsan.cn:81/">http://nas.zhangsan.cn:81</a><br>提前是一级域名 <a href="http://zhangsan.cn已经正常解析,比如我的hexo博客是托管github/">http://zhangsan.cn已经正常解析，比如我的Hexo博客是托管GitHub</a> Page，博客里添加一个菜单nas&#x2F;index.md里面，跳转代码如下：</p><script type="text/javascript">    window.location.href = "http://nas.zhangsan.cn:81";</script><h3 id="三、外网访问家里的路由器"><a href="#三、外网访问家里的路由器" class="headerlink" title="三、外网访问家里的路由器"></a>三、外网访问家里的路由器</h3><p>NAS盒子、路由器A和路由器B必须设置静态内网IP，其他设备DHCP分配地址，然后通过NAS盒子里的Nginx代理可以实现访问家里的路由器，配置如下：</p><p>路由器A:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen 82;</span><br><span class="line">        listen [::]:82;</span><br><span class="line"></span><br><span class="line">​    location / &#123;</span><br><span class="line">client_max_body_size 1024m;</span><br><span class="line">proxy_http_version 1.1;</span><br><span class="line">proxy_set_header Upgrade         $http_upgrade;</span><br><span class="line">proxy_set_header Connection      &quot;Upgrade&quot;;</span><br><span class="line">proxy_set_header Host            $http_host;</span><br><span class="line">proxy_set_header X-Real-IP       $remote_addr;</span><br><span class="line">proxy_set_header X-Forward-For   $proxy_add_x_forwarded_for;</span><br><span class="line">proxy_set_header X-Forward-Proto $scheme;</span><br><span class="line">proxy_redirect off; </span><br><span class="line">proxy_pass http://192.168.1.3;</span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>路由器B:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen 83;</span><br><span class="line">        listen [::]:83;</span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">    client_max_body_size 1024m;</span><br><span class="line">    proxy_http_version 1.1;</span><br><span class="line">    proxy_set_header Upgrade         $http_upgrade;</span><br><span class="line">    proxy_set_header Connection      &quot;Upgrade&quot;;</span><br><span class="line">    proxy_set_header Host            $http_host;</span><br><span class="line">    proxy_set_header X-Real-IP       $remote_addr;</span><br><span class="line">    proxy_set_header X-Forward-For   $proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_set_header X-Forward-Proto $scheme;</span><br><span class="line">    proxy_redirect off; </span><br><span class="line">    proxy_pass http://192.168.1.4;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>执行以下命令，即可访问</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ln -sf /etc/nginx/sites-&#123;available,enabled&#125;/nginx_router</span><br><span class="line">ln -sf /etc/nginx/sites-&#123;available,enabled&#125;/nginx_router2</span><br><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure><p>路由器A访问：<a href="http://nas.zhangsan.cn:82/">http://nas.zhangsan.cn:82</a> –&gt;192.168.1.3<br>路由器B访问：<a href="http://nas.zhangsan.cn:83/">http://nas.zhangsan.cn:83</a> –&gt;192.168.1.4</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;一、家里网络拓扑图&quot;&gt;&lt;a href=&quot;#一、家里网络拓扑图&quot; class=&quot;headerlink&quot; title=&quot;一、家里网络拓扑图&quot;&gt;&lt;/a&gt;一、家里网络拓扑图&lt;/h3&gt;&lt;p&gt;介绍一下网络布局，全屋设置同名WiFI，而路由器A和路由器B选择AP模式，是为了减少</summary>
+      
+    
+    
+    
+    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="网络" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="ipv6" scheme="http://example.com/tags/ipv6/"/>
+    
+    <category term="NAS" scheme="http://example.com/tags/NAS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电信天翼网关获取超级管理员密码</title>
+    <link href="http://example.com/posts/bda0/"/>
+    <id>http://example.com/posts/bda0/</id>
+    <published>2025-07-20T02:02:40.000Z</published>
+    <updated>2025-08-28T09:09:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.使用账户和密码登录192.168.1.1（光猫上贴的，账号为useradmin）</p><p>2.登陆成功后 把网址修改成192.168.1.1&#x2F;dumpmdmd.conf</p><p>3.回车提示下载文件，保存后用浏览器打开</p><blockquote><p>CTRL+F搜索TeleComAccount，在两个结果中间包含的就是电信维护人员所使用的超级账号和密码的信息 </p></blockquote><blockquote><p>其中Username&gt;<em><strong><strong>&lt;&#x2F;Username&amp;gt *****是账号Password&gt;</strong></strong></em>&lt;&#x2F;Password&amp;gt *****是密码</p></blockquote><p>用获取的超级账号和密码重新登陆192.168.1.1（账号一般是telecomadmin）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1.使用账户和密码登录192.168.1.1（光猫上贴的，账号为useradmin）&lt;/p&gt;
+&lt;p&gt;2.登陆成功后 把网址修改成192.168.1.1&amp;#x2F;dumpmdmd.conf&lt;/p&gt;
+&lt;p&gt;3.回车提示下载文件，保存后用浏览器打开&lt;/p&gt;
+&lt;blockquot</summary>
+      
+    
+    
+    
+    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="网络" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="天翼网关" scheme="http://example.com/tags/%E5%A4%A9%E7%BF%BC%E7%BD%91%E5%85%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Github部署Hexo博客</title>
+    <link href="http://example.com/posts/1529/"/>
+    <id>http://example.com/posts/1529/</id>
+    <published>2025-06-24T12:02:40.000Z</published>
+    <updated>2025-08-28T09:08:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-安装Git和NodeJS"><a href="#1-安装Git和NodeJS" class="headerlink" title="1.安装Git和NodeJS"></a>1.安装Git和NodeJS</h2><p>在Windows上使用Git，可以从Git官网直接</p><p>，然后按默认选项安<br>装即可。安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就<br>说明Git安装成功！</p><p>在Git中绑定Github账号，打开“Git Bash”，在命令框中依次输入两行命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name “Your Name”</span><br><span class="line">git config --global user.email email@example.com</span><br><span class="line"># 其中Your Name和email@example.com替换成上面注册时的账户名和邮箱</span><br></pre></td></tr></table></figure><p>由于 Hexo 是基于 Node.js 驱动的一款博客框架，所以安装NodeJS </p><p> 并配置环境变量。</p><p>安装之后可以输入以下命令查看是否安装成功：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><img src="https://pic1.imgdb.cn/item/685b6cb458cb8da5c86e055d.png"></p><h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2.安装Hexo"></a>2.安装Hexo</h2><p>以上环境准备好了就可使用 npm 开始安装 Hexo 了，在命令行输入执行如下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>安装 Hexo 完成后，在指定文件夹下打开“Git Bash”，再执行下列命令，Hexo 将会在指定文件夹中<br>新建所须要的文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myBlog</span><br><span class="line">cd myBlog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>若是上面的命令都没报错的话，就恭喜了，运行hexo s 命令，其中 s 是 server 的缩写，在浏览<br>器中输入 <a href="http://localhost:4000/">http://localhost:4000</a> 回车就能够预览效果了。</p><h3 id="3-将博客部署在GitHub上"><a href="#3-将博客部署在GitHub上" class="headerlink" title="3.将博客部署在GitHub上"></a>3.将博客部署在GitHub上</h3><p>点击 Start project 或者下面的 new repository 建立一个新的仓库，注意Github 仅能使用一个同<br>名仓库的代码托管一个静态站点，这里注意仓库名一定要是： 用户名.github.io</p><p>配置 SSH key ，要使用 git 工具首先要配置一下SSH key，为部署本地博客到 Github 作准备。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的邮箱&quot;</span></span><br><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">&quot;你的邮箱&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>输入以下命令来查看公钥内容：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure><p>将显示的公钥内容复制到剪贴板。</p><p>登陆 Github 上添加刚刚生成的SSH key，按如下步骤添加，右上角点击头像-&gt; settings -&gt; SSH<br>and GPG keys，建立一个新的 SSH key, 标题随便，key 就填刚才复制那个，确认建立，这样在你<br>的 SSH keys 列表里就会看到你刚刚添加的密钥。</p><p><img src="https://pic1.imgdb.cn/item/685b6cb458cb8da5c86e055f.png"></p><p>首次使用还须要确认并添加主机到本机SSH可信列表。若返回 Hi xxx! You’ve successfully<br>authenticated, but GitHub does not provide shell access. 内容，则证实添加成功。</p><p>如果最后一步报错⚠️</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Please make sure you have the correct access rights and the repository exists. </span><br><span class="line">FATAL Something<span class="string">&#x27;s wrong. Maybe you can find the solution here:https://hexo.io/docs/troubleshooting.html </span></span><br><span class="line"><span class="string">Error: Spawn failed </span></span><br><span class="line"><span class="string">    at ChildProcess.&lt;anonymous&gt; (C:\MyBlog\myblogs\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:51:21) </span></span><br><span class="line"><span class="string">    at ChildProcess.emit (node:events:519:28) </span></span><br><span class="line"><span class="string">    at cp.emit (C:\MyBlog\myblogs\node_modules\cross-spawn\lib\enoent.js:34:29) </span></span><br><span class="line"><span class="string">    at ChildProcess._handle.onexit (node:internal/child_process:294:12) </span></span><br></pre></td></tr></table></figure><h4 id="解决方案🎉"><a href="#解决方案🎉" class="headerlink" title="解决方案🎉"></a>解决方案🎉</h4><p>1.首先检查上述配置过程中是否出错，即 _config.yml 文件是否出错<br>2.检查 git 是否能够连接 github</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git ls-remote https://github.com/xingzhuz/xingzhuz.github.io.git</span><br></pre></td></tr></table></figure><p>3.如果不能连接，再测试 SSH 连接情况</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"><span class="comment"># 如果报错</span></span><br><span class="line">ssh: connect to host github.com port 22: Connection timed out</span><br></pre></td></tr></table></figure><ul><li>说明这个 SSH 连接超时，解决方案就是换个端口号</li><li>按照以下进行添加或者更改，更改电脑用户目录下的 config 文件，我的是 C:\Users\xingzhu\.ssh\config，以记事本打开或者其他方式打开</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 如果有这行数据，更改和添加对应的参数，如果没有，直接添加到末尾处</span></span><br><span class="line">Host github.com</span><br><span class="line">  Hostname ssh.github.com</span><br><span class="line">  Port 443</span><br></pre></td></tr></table></figure><ul><li>更改后，注意需要刷新使其生效，有对应的命令，粗暴的方式就是重新启动即可</li><li>生效后，测试连接情况</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"><span class="comment"># 我的成功示例 </span></span><br><span class="line"><span class="comment"># Hi Bitware0322! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span></span><br><span class="line">ping github.com</span><br><span class="line"><span class="comment"># 显示一系列数字，即 IP</span></span><br></pre></td></tr></table></figure><p>此时，本地和Github的工做作得差不了，是时候把它们两个链接起来了。你也能够查看官网的部署<br>教程。先不着急，部署以前还须要修改配置和安装部署插件。第一：打开项目根目录下的<br>_config.yml 配置文件配置参数。拉到文件末尾，填上以下配置。</p><p><img src="https://pic1.imgdb.cn/item/685b6cb458cb8da5c86e055c.jpg"></p><p>第二要安装一个部署插件 hexo-deployer-git，在创建的Hexo博客根目录右键打开“Git Bach”，输入以下指令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>最后</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="comment"># 先生成</span></span><br><span class="line">hexo d <span class="comment"># 部署到Github上</span></span><br></pre></td></tr></table></figure><p>这时用浏览器输入 用户名.github.io 就可以访问刚才的网站啦。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;1-安装Git和NodeJS&quot;&gt;&lt;a href=&quot;#1-安装Git和NodeJS&quot; class=&quot;headerlink&quot; title=&quot;1.安装Git和NodeJS&quot;&gt;&lt;/a&gt;1.安装Git和NodeJS&lt;/h2&gt;&lt;p&gt;在Windows上使用Git，可以从Git官</summary>
+      
+    
+    
+    
+    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
