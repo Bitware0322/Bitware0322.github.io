@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-10-23T04:58:33.529Z</updated>
+  <updated>2025-10-22T13:43:38.430Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Solidworks使用报错汇总</title>
-    <link href="http://example.com/posts/1d94/"/>
-    <id>http://example.com/posts/1d94/</id>
-    <published>2025-10-22T14:09:08.000Z</published>
-    <updated>2025-10-23T04:58:33.529Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;</summary>
-      
-    
-    
-    
-    
-    <category term="机械" scheme="http://example.com/tags/%E6%9C%BA%E6%A2%B0/"/>
-    
-    <category term="软件" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
   
   <entry>
     <title>Win11修复滑动时部分画面滚动BUG</title>
@@ -83,11 +59,11 @@
     
     
     
-    <category term="软件" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
     <category term="博途" scheme="http://example.com/tags/%E5%8D%9A%E9%80%94/"/>
     
     <category term="西门子" scheme="http://example.com/tags/%E8%A5%BF%E9%97%A8%E5%AD%90/"/>
+    
+    <category term="软件" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
