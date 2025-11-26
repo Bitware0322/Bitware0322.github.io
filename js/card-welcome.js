@@ -40,7 +40,7 @@ const showWelcome = ({
         lng,
         lat,
         country,
-        prov,
+        province,
         city
     } = data;
     const welcomeInfo = getWelcomeInfoElement();
@@ -48,11 +48,11 @@ const showWelcome = ({
 
     const dist = calculateDistance(lng, lat);
     const ipDisplay = formatIpDisplay(ip);
-    const pos = formatLocation(country, prov, city);
+    const pos = formatLocation(country, province, city);
 
     welcomeInfo.style.display = 'block';
     welcomeInfo.style.height = 'auto';
-    welcomeInfo.innerHTML = generateWelcomeMessage(pos, dist, ipDisplay, country, prov, city);
+    welcomeInfo.innerHTML = generateWelcomeMessage(pos, dist, ipDisplay, country, province, city);
 };
 
 const calculateDistance = (lng, lat) => {
@@ -67,16 +67,16 @@ const calculateDistance = (lng, lat) => {
     return Math.round(R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
 };
 const formatIpDisplay = (ip) => ip.includes(":") ? "<br>好复杂，咱看不懂~(ipv6)" : ip;
-const formatLocation = (country, prov, city) => {
-    return country ? (country === "中国" ? `${prov} ${city}` : country) : '神秘地区';
+const formatLocation = (country, province, city) => {
+    return country ? (country === "中国" ? `${province} ${city}` : country) : '神秘地区';
 };
 
-const generateWelcomeMessage = (pos, dist, ipDisplay, country, prov, city) => `
+const generateWelcomeMessage = (pos, dist, ipDisplay, country, province, city) => `
     欢迎来自 <b>${pos}</b> 的小友💖<br>
     你当前距博主约 <b>${dist}</b> 公里！<br>
     你的IP地址：<b class="ip-address">${ipDisplay}</b><br>
     ${getTimeGreeting()}<br>
-    Tip：<b>${getGreeting(country, prov, city)}🍂</b>
+    Tip：<b>${getGreeting(country, province, city)}🍂</b>
 `;
 
 const addStyles = () => {
