@@ -1,8 +1,8 @@
 window.IP_CONFIG = {
-    API_KEY: 'JVwxKoz7amvEnAOHDjgF0osmxW', // API密钥 申请地址：https://api.76.al/
+    API_KEY: 'JVwxKoz7amvEnAOHDjgF0osmxW', // API密钥 申请地址：https://api.nsmao.net/
     BLOG_LOCATION: {
-        lng: 103.95, // 经度
-        lat: 36.03 // 纬度
+        lng: 103.666, // 经度
+        lat: 36.666 // 纬度
     },
     CACHE_DURATION: 1000 * 60 * 60, // 可配置缓存时间(默认1小时)
     HOME_PAGE_ONLY: true, // 是否只在首页显示 开启后其它页面将不会显示这个容器
@@ -40,7 +40,7 @@ const showWelcome = ({
         lng,
         lat,
         country,
-        province,
+        prov,
         city
     } = data;
     const welcomeInfo = getWelcomeInfoElement();
@@ -48,11 +48,11 @@ const showWelcome = ({
 
     const dist = calculateDistance(lng, lat);
     const ipDisplay = formatIpDisplay(ip);
-    const pos = formatLocation(country, province, city);
+    const pos = formatLocation(country, prov, city);
 
     welcomeInfo.style.display = 'block';
     welcomeInfo.style.height = 'auto';
-    welcomeInfo.innerHTML = generateWelcomeMessage(pos, dist, ipDisplay, country, province, city);
+    welcomeInfo.innerHTML = generateWelcomeMessage(pos, dist, ipDisplay, country, prov, city);
 };
 
 const calculateDistance = (lng, lat) => {
@@ -67,16 +67,16 @@ const calculateDistance = (lng, lat) => {
     return Math.round(R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
 };
 const formatIpDisplay = (ip) => ip.includes(":") ? "<br>好复杂，咱看不懂~(ipv6)" : ip;
-const formatLocation = (country, province, city) => {
-    return country ? (country === "中国" ? `${province} ${city}` : country) : '神秘地区';
+const formatLocation = (country, prov, city) => {
+    return country ? (country === "中国" ? `${prov} ${city}` : country) : '神秘地区';
 };
 
-const generateWelcomeMessage = (pos, dist, ipDisplay, country, province, city) => `
+const generateWelcomeMessage = (pos, dist, ipDisplay, country, prov, city) => `
     欢迎来自 <b>${pos}</b> 的小友💖<br>
     你当前距博主约 <b>${dist}</b> 公里！<br>
     你的IP地址：<b class="ip-address">${ipDisplay}</b><br>
     ${getTimeGreeting()}<br>
-    Tip：<b>${getGreeting(country, province, city)}🍂</b>
+    Tip：<b>${getGreeting(country, prov, city)}🍂</b>
 `;
 
 const addStyles = () => {
