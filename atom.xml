@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-01-15T15:23:12.436Z</updated>
+  <updated>2026-01-17T10:02:12.149Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/posts/f59c/"/>
     <id>http://example.com/posts/f59c/</id>
     <published>2026-01-15T15:17:05.299Z</published>
-    <updated>2026-01-15T15:23:12.436Z</updated>
+    <updated>2026-01-17T10:02:12.149Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2>]]></content>
     
@@ -45,7 +45,7 @@
     <link href="http://example.com/posts/1494/"/>
     <id>http://example.com/posts/1494/</id>
     <published>2026-01-14T16:00:00.000Z</published>
-    <updated>2026-01-15T15:51:45.503Z</updated>
+    <updated>2026-01-17T10:02:12.146Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="刷机篇"><a href="#刷机篇" class="headerlink" title="刷机篇"></a>刷机篇</h2><h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><p>双公头USB数据线<br>一台win10或以下系统的电脑<br>USB_Burning_Tool软件<br>要刷的烧录包</p><h4 id="开始刷机"><a href="#开始刷机" class="headerlink" title="开始刷机"></a>开始刷机</h4><ul><li>打开USB_Burning_Tool软件</li><li>左上角文件&gt;导入烧录包，选择下载的固件，点击开始</li><li>双公头USB数据线，一头插靠近HDMI接口USB，一头电脑USB，短接刷机点</li></ul>]]></content>
     
