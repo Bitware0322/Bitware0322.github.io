@@ -4,36 +4,11 @@
   
     
     <entry>
-      <title>模板</title>
-      <link href="/posts/f59c/"/>
-      <url>/posts/f59c/</url>
-      
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> 经验分享 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>玩客云折腾记录刷Armbian</title>
       <link href="/posts/1494/"/>
       <url>/posts/1494/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="刷机篇"><a href="#刷机篇" class="headerlink" title="刷机篇"></a>刷机篇</h2><h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><p>双公头USB数据线<br>一台win10或以下系统的电脑<br>USB_Burning_Tool软件<br>要刷的烧录包</p><h4 id="开始刷机"><a href="#开始刷机" class="headerlink" title="开始刷机"></a>开始刷机</h4><ul><li>打开USB_Burning_Tool软件</li><li>左上角文件&gt;导入烧录包，选择下载的固件，点击开始</li><li>双公头USB数据线，一头插靠近HDMI接口USB，一头电脑USB，短接刷机点</li></ul>]]></content>
+        <content type="html"><![CDATA[<h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ul><li>双公头USB数据线</li><li>一台win10或以下系统的电脑</li><li>USB_Burning_Tool软件</li><li>要刷的烧录包<br>烧录的固件可以从这下载：<a href="https://github.com/hzyitc/armbian-onecloud/releases">armbian固件下载</a></li></ul><h4 id="固件版本说明"><a href="#固件版本说明" class="headerlink" title="固件版本说明"></a>固件版本说明</h4><ul><li>current（推荐）：稳定版，一般指代当前官方推荐的稳定版本，经过了充分的测试和优化，确保兼容性和稳定性较高。</li><li>Edge：开发版，一般是让高级用户或开发者提前体验新功能，并提供反馈，包含了最新的功能更新或者实验性特性，但相对稳定性可能会较低，可能存在未知的问题。</li><li>带“burn”（推荐）：在Armbian或类似的基于Linux的嵌入式设备固件发布中，带有“burn”字样的文件通常是指直接烧录（Flash）用的镜像文件。这类文件往往是针对特定硬件设计的，可以直接通过SD卡、USB闪存或其他方式一次性将整个操作系统及配置写</li><li>设备内部的存储介质（如eMMC、NAND Flash等）。它们通常是经过特殊处理的二进制映像文件，包含了引导加载程序、内核以及根文件系统等必要的系统组件。</li><li>带“minimal”（按需）：有”minimal”字样的刷机包通常指的是一个精简版或最小化安装版本的固件。这种固件镜像包含了运行操作系统和特定应用所必需的最基础软件包，去除了不必要的服务、图形界面和其他非核心组件。</li></ul><h4 id="刷机方法"><a href="#刷机方法" class="headerlink" title="刷机方法"></a>刷机方法</h4><ul><li>打开USB_Burning_Tool软件</li><li>左上角文件&gt;导入烧录包，选择下载的固件，点击开始</li><li>双公头USB数据线，一头插靠近HDMI接口USB，一头电脑USB</li><li>短接刷机点通电到3%再松手，直到刷机完成</li><li>刷机完成后立马点击停止后断电，拔下数据线。（不点击停止很可能又会自动再刷一遍）</li></ul><p>短接点</p><p><img src="http://youke.猪猪网络.cn/s1/2026/01/19/696dd29524eb5.png" alt="短接点"></p><p>具体方法参考：<a href="https://blog.csdn.net/bigbear00007/article/details/123457243">https://blog.csdn.net/bigbear00007/article/details/123457243</a></p><h4 id="Armbian系统配置"><a href="#Armbian系统配置" class="headerlink" title="Armbian系统配置"></a>Armbian系统配置</h4><ul><li><strong>检查时间</strong></li></ul><p>1.执行以下命令，查看时间。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">date</span> -R</span><br></pre></td></tr></table></figure><p>2.如果时区及时间不对，输入命令。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime</span><br></pre></td></tr></table></figure><p>3.再次检查时间。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">date</span> -R</span><br></pre></td></tr></table></figure><ul><li><strong>一键更换国内源</strong></li></ul><p>1.执行以下命令，一键更换国内源。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -sSL https://linuxmirrors.cn/main.sh)</span><br></pre></td></tr></table></figure><p>参考LinuxMirrors：<a href="https://github.com/SuperManito/LinuxMirrors?tab=readme-ov-file">https://github.com/SuperManito/LinuxMirrors</a></p><p>使用方法：<a href="https://linuxmirrors.cn/use/">https://linuxmirrors.cn/use/</a></p><ul><li>挂载移动硬盘<br>1.安装必要软件包</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install ntfs-3g  <span class="comment"># 主流 NTFS 读写驱动</span></span><br></pre></td></tr></table></figure><p>2.手动挂载 NTFS 磁盘</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">mkdir</span> /mnt/ntfs_disk  <span class="comment"># 创建挂载点</span></span><br><span class="line"><span class="built_in">sudo</span> mount -t ntfs-3g /dev/sdX1 /mnt/ntfs_disk  <span class="comment"># 挂载</span></span><br></pre></td></tr></table></figure><p><strong>如果挂载磁盘时遇到</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mount is denied because the NTFS volume is already exclusively opened. The volume may be already mounted, or another software may use it <span class="built_in">which</span> could be identified <span class="keyword">for</span> example by the <span class="built_in">help</span> of the <span class="string">&#x27;fuser&#x27;</span> <span class="built_in">command</span>.</span><br></pre></td></tr></table></figure><ul><li>已经被挂载或者有应用程序正在使用它。<br>查看正在使用它的应用程序</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fuser -m /dev/sda1</span><br></pre></td></tr></table></figure><p>结果：&#x2F;dev&#x2F;sdb1: 19951<br>id为19951的进程正在使用它。<br>杀掉该进程</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> 19951</span><br></pre></td></tr></table></figure><p>再次挂载：mount &#x2F;dev&#x2F;sda1 &#x2F;mnt&#x2F;mydisk</p><ul><li>该硬盘已经被挂载<br>查看系统设备文件</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsblk</span><br></pre></td></tr></table></figure><p><img src="http://youke.猪猪网络.cn/s1/2026/01/19/696dd294e2c9f.png"><br>取消挂载，然后重新挂载</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">umount /dev/sda1</span><br></pre></td></tr></table></figure><p>3.<strong>开机自动挂载</strong>：</p><ul><li><p>获取磁盘 UUID：<code>sudo blkid</code></p></li><li><p>编辑 <code>/etc/fstab</code>，添加行：</p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UUID=你的UUID /mnt/ntfs ntfs-3g defaults 0 0</span><br></pre></td></tr></table></figure><h4 id="安装docker和1panel"><a href="#安装docker和1panel" class="headerlink" title="安装docker和1panel"></a>安装docker和1panel</h4><ul><li>apt 安装 docker</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install docker.io</span><br></pre></td></tr></table></figure><p>docker安装完成后</p><ul><li>安装1panel<br>1panel官方网址：<a href="https://1panel.cn/">https://1panel.cn/</a> 使用官方的Debian安装部署命令就可以。</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh &amp;&amp; bash quick_start.sh</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -72,11 +47,11 @@
       
         <tags>
             
-            <tag> 系统 </tag>
-            
             <tag> 博途 </tag>
             
             <tag> 西门子 </tag>
+            
+            <tag> 系统 </tag>
             
         </tags>
       
