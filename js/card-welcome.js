@@ -1,3 +1,4 @@
+// 公告栏来访者卡片js文件
 window.IP_CONFIG = {
     API_KEY: 'JVwxKoz7amvEnAOHDjgF0osmxW', // API密钥 申请地址：https://api.nsmao.net/
     BLOG_LOCATION: {
