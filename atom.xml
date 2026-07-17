@@ -3,11 +3,11 @@
   <title>Bitware</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://bitware0322.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://bitware0322.github.io/"/>
   <updated>2026-01-19T06:50:11.312Z</updated>
-  <id>http://example.com/</id>
+  <id>https://bitware0322.github.io/</id>
   
   <author>
     <name>Bitware</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>玩客云折腾记录刷Armbian</title>
-    <link href="http://example.com/posts/1494/"/>
-    <id>http://example.com/posts/1494/</id>
+    <link href="https://bitware0322.github.io/posts/1494/"/>
+    <id>https://bitware0322.github.io/posts/1494/</id>
     <published>2026-01-14T16:00:00.000Z</published>
     <updated>2026-01-19T06:50:11.312Z</updated>
     
@@ -36,19 +36,19 @@
     
     
     
-    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    <category term="经验分享" scheme="https://bitware0322.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="linux" scheme="http://example.com/tags/linux/"/>
+    <category term="玩客云" scheme="https://bitware0322.github.io/tags/%E7%8E%A9%E5%AE%A2%E4%BA%91/"/>
     
-    <category term="玩客云" scheme="http://example.com/tags/%E7%8E%A9%E5%AE%A2%E4%BA%91/"/>
+    <category term="linux" scheme="https://bitware0322.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>博途TIA卸载残留清理踩坑实录</title>
-    <link href="http://example.com/posts/684b/"/>
-    <id>http://example.com/posts/684b/</id>
+    <link href="https://bitware0322.github.io/posts/684b/"/>
+    <id>https://bitware0322.github.io/posts/684b/</id>
     <published>2025-12-01T15:02:40.000Z</published>
     <updated>2025-12-01T16:48:50.647Z</updated>
     
@@ -62,21 +62,21 @@
     
     
     
-    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    <category term="经验分享" scheme="https://bitware0322.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="系统" scheme="http://example.com/tags/%E7%B3%BB%E7%BB%9F/"/>
+    <category term="博途" scheme="https://bitware0322.github.io/tags/%E5%8D%9A%E9%80%94/"/>
     
-    <category term="博途" scheme="http://example.com/tags/%E5%8D%9A%E9%80%94/"/>
+    <category term="系统" scheme="https://bitware0322.github.io/tags/%E7%B3%BB%E7%BB%9F/"/>
     
-    <category term="西门子" scheme="http://example.com/tags/%E8%A5%BF%E9%97%A8%E5%AD%90/"/>
+    <category term="西门子" scheme="https://bitware0322.github.io/tags/%E8%A5%BF%E9%97%A8%E5%AD%90/"/>
     
   </entry>
   
   <entry>
     <title>Win11修复滑动时部分画面滚动BUG</title>
-    <link href="http://example.com/posts/a84e/"/>
-    <id>http://example.com/posts/a84e/</id>
+    <link href="https://bitware0322.github.io/posts/a84e/"/>
+    <id>https://bitware0322.github.io/posts/a84e/</id>
     <published>2025-10-22T13:17:11.000Z</published>
     <updated>2025-10-22T13:43:38.430Z</updated>
     
@@ -92,16 +92,16 @@
     
     
     
-    <category term="Win11" scheme="http://example.com/tags/Win11/"/>
+    <category term="系统" scheme="https://bitware0322.github.io/tags/%E7%B3%BB%E7%BB%9F/"/>
     
-    <category term="系统" scheme="http://example.com/tags/%E7%B3%BB%E7%BB%9F/"/>
+    <category term="Win11" scheme="https://bitware0322.github.io/tags/Win11/"/>
     
   </entry>
   
   <entry>
     <title>博途TIA报错问题汇总</title>
-    <link href="http://example.com/posts/2416/"/>
-    <id>http://example.com/posts/2416/</id>
+    <link href="https://bitware0322.github.io/posts/2416/"/>
+    <id>https://bitware0322.github.io/posts/2416/</id>
     <published>2025-10-18T05:07:37.000Z</published>
     <updated>2026-04-12T00:57:53.468Z</updated>
     
@@ -116,18 +116,18 @@
     
     
     
-    <category term="博途" scheme="http://example.com/tags/%E5%8D%9A%E9%80%94/"/>
+    <category term="博途" scheme="https://bitware0322.github.io/tags/%E5%8D%9A%E9%80%94/"/>
     
-    <category term="西门子" scheme="http://example.com/tags/%E8%A5%BF%E9%97%A8%E5%AD%90/"/>
+    <category term="软件" scheme="https://bitware0322.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
     
-    <category term="软件" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="西门子" scheme="https://bitware0322.github.io/tags/%E8%A5%BF%E9%97%A8%E5%AD%90/"/>
     
   </entry>
   
   <entry>
     <title>WIN11快速启动导致关机异常问题修复</title>
-    <link href="http://example.com/posts/e99/"/>
-    <id>http://example.com/posts/e99/</id>
+    <link href="https://bitware0322.github.io/posts/e99/"/>
+    <id>https://bitware0322.github.io/posts/e99/</id>
     <published>2025-10-18T01:25:02.000Z</published>
     <updated>2025-10-18T04:49:14.173Z</updated>
     
@@ -142,16 +142,16 @@
     
     
     
-    <category term="Win11" scheme="http://example.com/tags/Win11/"/>
+    <category term="快速启动" scheme="https://bitware0322.github.io/tags/%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/"/>
     
-    <category term="快速启动" scheme="http://example.com/tags/%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/"/>
+    <category term="Win11" scheme="https://bitware0322.github.io/tags/Win11/"/>
     
   </entry>
   
   <entry>
     <title>使用CloudDrive将网盘挂载到本地，从此告别繁琐！</title>
-    <link href="http://example.com/posts/8575/"/>
-    <id>http://example.com/posts/8575/</id>
+    <link href="https://bitware0322.github.io/posts/8575/"/>
+    <id>https://bitware0322.github.io/posts/8575/</id>
     <published>2025-10-06T13:30:35.000Z</published>
     <updated>2025-10-08T00:49:04.094Z</updated>
     
@@ -167,16 +167,16 @@
     
     
     
-    <category term="Win11" scheme="http://example.com/tags/Win11/"/>
+    <category term="网盘" scheme="https://bitware0322.github.io/tags/%E7%BD%91%E7%9B%98/"/>
     
-    <category term="网盘" scheme="http://example.com/tags/%E7%BD%91%E7%9B%98/"/>
+    <category term="Win11" scheme="https://bitware0322.github.io/tags/Win11/"/>
     
   </entry>
   
   <entry>
     <title>在手机上部署hexo博客</title>
-    <link href="http://example.com/posts/2ecd/"/>
-    <id>http://example.com/posts/2ecd/</id>
+    <link href="https://bitware0322.github.io/posts/2ecd/"/>
+    <id>https://bitware0322.github.io/posts/2ecd/</id>
     <published>2025-08-27T02:02:47.000Z</published>
     <updated>2025-10-22T13:45:46.303Z</updated>
     
@@ -192,20 +192,20 @@
     
     
     
-    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    <category term="博客" scheme="https://bitware0322.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="博客" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="手机" scheme="https://bitware0322.github.io/tags/%E6%89%8B%E6%9C%BA/"/>
     
-    <category term="termux" scheme="http://example.com/tags/termux/"/>
+    <category term="Hexo" scheme="https://bitware0322.github.io/tags/Hexo/"/>
     
-    <category term="手机" scheme="http://example.com/tags/%E6%89%8B%E6%9C%BA/"/>
+    <category term="termux" scheme="https://bitware0322.github.io/tags/termux/"/>
     
   </entry>
   
   <entry>
     <title>外网通过ipv6地址访问内网服务器</title>
-    <link href="http://example.com/posts/8040/"/>
-    <id>http://example.com/posts/8040/</id>
+    <link href="https://bitware0322.github.io/posts/8040/"/>
+    <id>https://bitware0322.github.io/posts/8040/</id>
     <published>2025-07-23T02:09:10.000Z</published>
     <updated>2025-08-28T09:09:32.000Z</updated>
     
@@ -219,19 +219,19 @@
     
     
     
-    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    <category term="经验分享" scheme="https://bitware0322.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="网络" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://bitware0322.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="ipv6" scheme="http://example.com/tags/ipv6/"/>
+    <category term="ipv6" scheme="https://bitware0322.github.io/tags/ipv6/"/>
     
   </entry>
   
   <entry>
     <title>NAS盒子-IPV6动态域名解析外网访问</title>
-    <link href="http://example.com/posts/8003/"/>
-    <id>http://example.com/posts/8003/</id>
+    <link href="https://bitware0322.github.io/posts/8003/"/>
+    <id>https://bitware0322.github.io/posts/8003/</id>
     <published>2025-07-22T02:09:10.000Z</published>
     <updated>2025-08-28T09:09:04.000Z</updated>
     
@@ -245,21 +245,21 @@
     
     
     
-    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    <category term="经验分享" scheme="https://bitware0322.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="网络" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://bitware0322.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="ipv6" scheme="http://example.com/tags/ipv6/"/>
+    <category term="NAS" scheme="https://bitware0322.github.io/tags/NAS/"/>
     
-    <category term="NAS" scheme="http://example.com/tags/NAS/"/>
+    <category term="ipv6" scheme="https://bitware0322.github.io/tags/ipv6/"/>
     
   </entry>
   
   <entry>
     <title>电信天翼网关获取超级管理员密码</title>
-    <link href="http://example.com/posts/bda0/"/>
-    <id>http://example.com/posts/bda0/</id>
+    <link href="https://bitware0322.github.io/posts/bda0/"/>
+    <id>https://bitware0322.github.io/posts/bda0/</id>
     <published>2025-07-20T02:02:40.000Z</published>
     <updated>2025-08-28T09:09:18.000Z</updated>
     
@@ -276,19 +276,19 @@
     
     
     
-    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    <category term="经验分享" scheme="https://bitware0322.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="网络" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://bitware0322.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="天翼网关" scheme="http://example.com/tags/%E5%A4%A9%E7%BF%BC%E7%BD%91%E5%85%B3/"/>
+    <category term="天翼网关" scheme="https://bitware0322.github.io/tags/%E5%A4%A9%E7%BF%BC%E7%BD%91%E5%85%B3/"/>
     
   </entry>
   
   <entry>
     <title>在Github部署Hexo博客</title>
-    <link href="http://example.com/posts/1529/"/>
-    <id>http://example.com/posts/1529/</id>
+    <link href="https://bitware0322.github.io/posts/1529/"/>
+    <id>https://bitware0322.github.io/posts/1529/</id>
     <published>2025-06-24T12:02:40.000Z</published>
     <updated>2025-08-28T09:08:48.000Z</updated>
     
@@ -302,10 +302,10 @@
     
     
     
-    <category term="经验分享" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    <category term="经验分享" scheme="https://bitware0322.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://bitware0322.github.io/tags/Hexo/"/>
     
   </entry>
   
