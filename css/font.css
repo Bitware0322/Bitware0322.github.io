@@ -1,6 +1,0 @@
-/* 字体css */
-@font-face {
-    font-family: 'XinQuHei';
-    font-display: swap;
-    src: url('/ttf/XinQuHei.ttf') format("truetype");
-}

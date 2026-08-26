@@ -132,9 +132,7 @@ let getSpareUrls = (srcUrl) => {
     };
   }
 }
-let skipRequest = (request) => request.url.startsWith("https://i0.hdslb.com") ||
-  request.url.startsWith('https://meting.qjqq.cn') ||
-  request.url.startsWith('https://api.i-meto.com')
+let skipRequest = (request) => request.url.startsWith("https://i0.hdslb.com")
 let isCors = () => false
 let isMemoryQueue = () => false
 const fetchFile = (request, banCache, urls = null) => {
