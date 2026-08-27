@@ -125,19 +125,25 @@ html:not([data-theme="dark"]) #post-info #post-meta a:hover {
 /* 文章顶部卡片 */
 #page-header #post-info {
     position: absolute;
-    bottom: 0px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
+    width: 1170px;
+    /*
+    width: calc(100% - 30px);
+    max-width: 1200px;
+    */
     margin: 0;
-    padding: 20px 40px;
     box-sizing: border-box;
     display: block;
     text-align: left;
+    padding: 20px 40px;
     border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
     #page-header #post-info {
+        width: calc(100% - 10px);
         padding: 15px 20px !important;
         bottom: 20px !important;
     }
